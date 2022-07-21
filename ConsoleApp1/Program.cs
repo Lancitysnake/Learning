@@ -98,7 +98,7 @@ class Program
         Console.WriteLine($"Общий объем резервуаров: {totalVolume}");
 
         var searching = Console.ReadLine();
-        FindInfo(factories, units, tanks, searching); //Поиск информации по описанию объекта
+        FindInfo(factories, units, tanks, searching);
     }
     public static void FindInfo(Factory[] factories, Unit[] units, Tank[] tanks, string description)
     {
@@ -151,7 +151,7 @@ class Program
 
         for (int i = 0; i < tanks.Length; i++)
         {
-
+            
             if (tanks[i].description == description)
             {
                 Console.WriteLine($"По вашему запросу найден {tanks[i].name} типа установки {tanks[i].description}" +
@@ -159,7 +159,7 @@ class Program
             }
         }
 
-    } //Поиск информации по описанию объекта
+    }
     // реализуйте этот метод, чтобы он возвращал массив резервуаров, согласно приложенным таблицам
     // можно использовать создание объектов прямо в C# коде через new, или читать из файла (на своё усмотрение)
 
